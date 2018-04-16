@@ -40,6 +40,7 @@ catkin_make
 Dowload KITTI rosbag sequences:http://cifasis-conicet.gov.ar/taihu/datasets/KITTI/bags/
 
 rosrun stereo_dso_ros stero_dso_ros calib=/home/huicanlin/catkin_ws/src/stereo_dso_ros/examples/camera_kitti.txt preset=0 mode=1
+
 rosrun stereo_dso_ros stero_dso_ros calib=/home/huicanlin/catkin_ws/src/stereo_dso_ros/examples/camera_kitti.txt preset=0 mode=1 /cam0/image_raw:=/kitti_stereo/left/image_rect /cam1/image_raw:=kitti_stereo/right/image_rect
 
 rosbag play --pause ~/Downloads/Dataset/KITTI/kitti_00.bag
