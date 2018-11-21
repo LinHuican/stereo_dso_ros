@@ -91,16 +91,16 @@ void settingsDefault(int preset)
         setting_maxShiftWeightR= 0.04f * (640 + 128);   // original is 0.0f * (640+480);
         setting_maxShiftWeightRT= 0.02f * (640 + 128);  // original is 0.02f * (640+480);
         */
-        /*林辉灿重设参数 KITTI*/
+        /*林辉灿重设参数 KITTI*
         setting_kfGlobalWeight=1.0;   // original is 1.0. 0.3 is a balance between speed and accuracy. if tracking lost, set this para higher
         setting_maxShiftWeightT= 0.04f * (960 + 320);   // original is 0.04f * (640+480); this para is depend on the crop size.
         setting_maxShiftWeightR= 0.04f * (960 + 320);    // original is 0.0f * (640+480);
         setting_maxShiftWeightRT= 0.02f * (960 + 320);  // original is 0.02f * (640+480);
-        /*林辉灿重设参数  EuRoC
-        setting_kfGlobalWeight = 1.0;   // original is 1.0. 0.3 is a balance between speed and accuracy. if tracking lost, set this para higher
-        setting_maxShiftWeightT= 0.04f * (640 + 480);   // original is 0.04f * (640+480); this para is depend on the crop size.
-        setting_maxShiftWeightR= 0.04f * (640 + 480);    // original is 0.0f * (640+480);
-        setting_maxShiftWeightRT= 0.02f * (640 + 480);  // original is 0.02f * (640+480);*/
+        /*林辉灿重设参数  EuRoC*/
+        setting_kfGlobalWeight = 0.3f;   // original is 1.0. 0.3 is a balance between speed and accuracy. if tracking lost, set this para higher
+        setting_maxShiftWeightT= 0.04f * (640 + 360);   // original is 0.04f * (640+480); this para is depend on the crop size.
+        setting_maxShiftWeightR= 0.04f * (640 + 360);    // original is 0.0f * (640+480);
+        setting_maxShiftWeightRT= 0.02f * (640 + 360);  // original is 0.02f * (640+480);*/
 
 
         setting_logStuff = false;
