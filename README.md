@@ -43,6 +43,8 @@ rosrun stereo_dso_ros stero_dso_ros calib=/home/huicanlin/catkin_ws/src/stereo_d
 
 rosbag play --pause ~/Downloads/Dataset/KITTI/kitti_00.bag
 
+![](https://github.com/LinHuican/stereo_dso_ros/blob/master/stereo_dso_ros_kitti_00.png)
+
 
 ### EuRoC dataset
 
