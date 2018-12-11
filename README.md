@@ -63,20 +63,24 @@ rosrun stereo_dso_ros stero_dso_ros calib=/home/huicanlin/catkin_ws/src/stereo_d
 rosbag play --pause ~/Downloads/Dataset/ETH/V1_01_easy.bag
 ```
 
-For poor computing power, you may try: 
+For poor computing power, you may try:
 
 ```
 rosbag play --pause ~/Downloads/Dataset/ETH/V1_01_easy.bag -r 0.5
 ```
 
 
-### Own stereo cameta
+![](https://github.com/LinHuican/stereo_dso_ros/blob/master/stereo_dso_ros_euroc_v101.png)
+
+
+
+### Own stereo camera
 
 ```
-rosrun stereo_dso_ros stero_dso_ros calib=/home/huicanlin/catkin_ws/src/stereo_dso_ros/examples/camera_kitti.txt preset=0 mode=1 /cam0/image_raw:=/kitti_stereo/left/image_rect /cam1/image_raw:=kitti_stereo/right/image_rect
+rosrun stereo_dso_ros stero_dso_ros calib=/home/huicanlin/catkin_ws/src/stereo_dso_ros/examples/camera_kitti.txt preset=0 mode=1 /cam0/image_raw:=/your_left_camera /cam1/image_raw:=/your_left_camera
 ```
 ```
-rosbag play --pause ~/Downloads/Dataset/KITTI/kitti_00.bag
+Your code to publish left and right camera.
 ```
 
 # 3 Others
