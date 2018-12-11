@@ -53,14 +53,21 @@ rosbag play --pause ~/Downloads/Dataset/KITTI/kitti_00.bag
 
 ```
 rosrun stereo_dso_ros stero_dso_ros calib=/home/huicanlin/catkin_ws/src/stereo_dso_ros/examples/camera_euroc.txt preset=0 mode=1
+```
 
+```
 rosbag play --pause ~/Downloads/Dataset/ETH/V1_01_easy.bag
 ```
-(for poor computing power, you may try: rosbag play --pause ~/Downloads/Dataset/ETH/V1_01_easy.bag -r 0.5)
+
+For poor computing power, you may try: 
+
+```
+rosbag play --pause ~/Downloads/Dataset/ETH/V1_01_easy.bag -r 0.5
+```
 
 # 3 Others
 
-If you have any trouble installing or running STEREO DSO ROS, contact the authors(huicanlin@gmail.com).
+If you have any trouble installing or running STEREO DSO ROS, contact the authors(18606921232@163.com).
 
 # 4 License
 
