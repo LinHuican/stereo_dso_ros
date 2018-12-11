@@ -83,6 +83,8 @@ rosrun stereo_dso_ros stero_dso_ros calib=/home/huicanlin/catkin_ws/src/stereo_d
 Your code to publish left and right camera.
 ```
 
+![](https://github.com/LinHuican/stereo_dso_ros/blob/master/own_stereo_camera.png)
+
 # 3 Others
 
 If you have any trouble installing or running STEREO DSO ROS, contact the authors(18606921232@163.com).
