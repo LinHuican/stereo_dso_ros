@@ -42,7 +42,9 @@ Dowload KITTI rosbag sequences:http://cifasis-conicet.gov.ar/taihu/datasets/KITT
 
 ```
 rosrun stereo_dso_ros stero_dso_ros calib=/home/huicanlin/catkin_ws/src/stereo_dso_ros/examples/camera_kitti.txt preset=0 mode=1 /cam0/image_raw:=/kitti_stereo/left/image_rect /cam1/image_raw:=kitti_stereo/right/image_rect
+```
 
+```
 rosbag play --pause ~/Downloads/Dataset/KITTI/kitti_00.bag
 ```
 
@@ -50,6 +52,8 @@ rosbag play --pause ~/Downloads/Dataset/KITTI/kitti_00.bag
 
 
 ### EuRoC dataset
+
+The performance of the STEREO DSO ROS in the EuRoc dataset is not satisfactory and still needs improvement.
 
 ```
 rosrun stereo_dso_ros stero_dso_ros calib=/home/huicanlin/catkin_ws/src/stereo_dso_ros/examples/camera_euroc.txt preset=0 mode=1
@@ -63,6 +67,16 @@ For poor computing power, you may try:
 
 ```
 rosbag play --pause ~/Downloads/Dataset/ETH/V1_01_easy.bag -r 0.5
+```
+
+
+### Own stereo cameta
+
+```
+rosrun stereo_dso_ros stero_dso_ros calib=/home/huicanlin/catkin_ws/src/stereo_dso_ros/examples/camera_kitti.txt preset=0 mode=1 /cam0/image_raw:=/kitti_stereo/left/image_rect /cam1/image_raw:=kitti_stereo/right/image_rect
+```
+```
+rosbag play --pause ~/Downloads/Dataset/KITTI/kitti_00.bag
 ```
 
 # 3 Others
