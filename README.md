@@ -77,10 +77,10 @@ rosbag play --pause ~/Downloads/Dataset/ETH/V1_01_easy.bag -r 0.5
 ### Own stereo camera
 
 ```
-rosrun stereo_dso_ros stero_dso_ros calib=/home/huicanlin/catkin_ws/src/stereo_dso_ros/examples/camera_kitti.txt preset=0 mode=1 /cam0/image_raw:=/your_left_camera /cam1/image_raw:=/your_left_camera
+rosrun stereo_dso_ros stero_dso_ros calib=/home/huicanlin/catkin_ws/src/stereo_dso_ros/examples/own_camera.txt preset=0 mode=1 /cam0/image_raw:=/own_left_camera /cam1/image_raw:=/own_left_camera
 ```
 ```
-Your code to publish left and right camera.
+Publish own left and right camera.
 ```
 
 ![](https://github.com/LinHuican/stereo_dso_ros/blob/master/own_stereo_camera.png)
