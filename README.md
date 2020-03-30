@@ -4,11 +4,11 @@ This is a minimal example of how to integrate STEREO DSO from a ROS project, and
 
 Detail about STEREO DSO: https://github.com/HorizonAD/stereo_dso
 
-Assume that you are familiar with ROS. If you are not familiar with ROS, you can refer to the following link to install and learn how to use ROS.
+Assume that you are familiar with ROS. If you are not familiar with ROS, you can refer to the following link to install and learn how to use ROS. Tested on ubuntu16.04 + ROS Kinetic.
 
 Installation instructions:
 
-http://wiki.ros.org/indigo/Installation
+http://wiki.ros.org/ROS/Installation
 
 ROS Tutorials:
 
