@@ -55,9 +55,9 @@ include_directories(
 )
 
 ## Declare a C++ executable
-add_executable(stero_dso_ros src/stereo_dso_ros.cpp)
+add_executable(stereo_dso_ros src/stereo_dso_ros.cpp)
 
-target_link_libraries(stero_dso_ros
+target_link_libraries(stereo_dso_ros
     ${STEREO_DSO_LIBRARY}
     ${Pangolin_LIBRARIES}
     ${OpenCV_LIBS}
