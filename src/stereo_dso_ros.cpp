@@ -306,8 +306,8 @@ void callback(const sensor_msgs::ImageConstPtr& img, const sensor_msgs::ImageCon
     fullSystem->addActiveFrame(undistImg, undistImg_right, frameID);
     frameID++;
     //printf("frameID: %d\n", frameID);
-    //delete undistImg;
-    //delete undistImg_right;
+    delete undistImg;
+    delete undistImg_right;
 }
 
 int main( int argc, char** argv )
