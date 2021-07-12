@@ -374,13 +374,13 @@ int main( int argc, char** argv )
 
     ros::spin();
 
+    fullSystem->printResult("/home/huicanlin/catkin_ws/src/stereo_dso_ros/examples/result.txt");
     for(IOWrap::Output3DWrapper* ow : fullSystem->outputWrapper)
     {
         ow->join();
         delete ow;
     }
-
-    fullSystem->printResult("/home/huicanlin/catkin_ws/src/stereo_dso_ros/examples/result.txt");
+    
     delete undistorter;
     delete fullSystem;
 
